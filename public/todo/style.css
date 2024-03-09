@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: beige;
+
+}
+.container {
+    width: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.container .heading{
+    color: #720455;
+}
+
+.container .todo-user {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    border-radius: 3px;
+
+}
+
+.container .todo-user .task-inp {
+    width: 65%;
+    height: 100%;
+}
+.container .todo-user .task-inp  input{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 3px;
+}
+.container .todo-user .task-inp  input:focus{
+    outline: 2px solid #3C0753;
+    border: none;
+}
+.container .todo-user .task-btn {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .todo-user .task-btn button {
+    width: 47%  ;
+    height: 100%;
+    background-color: #910A67;
+    color: white;
+    border: none;
+    border-radius: 3px
+    
+}
+
+.container .line {
+    width: 100%;
+    height: 4px;
+    background-color: #910A67
+}
+
+.container .todo-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .todo-list .show-list-div {
+    display: flex;
+    justify-content: space-between;
+}
+.container .todo-list .show-list-div:hover{
+    background-color: #a7a6a634;
+}
+.container .todo-list .show-list-div p {
+    width: 70%;
+    word-wrap: break-word;
+}
+.container .todo-list .show-list-div p input{
+    width: 100%;
+}
+
+.container .todo-list .show-list-div .task-btn{
+    display: flex;
+    gap: 2px;
+    width: 25%;
+}
+
+.container .todo-list .show-list-div .task-btn button {
+    width: 44%;
+    height: 23px;
+    background-color: #3C0753;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
